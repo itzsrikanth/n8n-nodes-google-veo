@@ -30,10 +30,15 @@
     "n8n": {
         "n8nNodesApiVersion": 1,
         "strict": true,
-        "credentials": [],
+        "credentials": [
+            "dist/credentials/GeminiApi.credentials.js"
+        ],
         "nodes": [
-            "dist/nodes/Example/Example.node.js"
+            "dist/nodes/GoogleVeo/GoogleVeo.node.js"
         ]
+    },
+    "dependencies": {
+        "@google/genai": "^1.0.0"
     },
     "devDependencies": {
         "@n8n/node-cli": "*",
